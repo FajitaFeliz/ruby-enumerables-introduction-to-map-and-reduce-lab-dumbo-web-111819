@@ -53,6 +53,13 @@ def reduce_to_all_true(source_array)
   i = 0
   output = true
   while i < source_array.length do
+    if !source_array[i]
+      output = false
+    end
+    i += 1
+  end
+  output
+end
     
 
 
